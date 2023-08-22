@@ -1,0 +1,33 @@
+﻿@using m8.Web.Components
+@inherits LayoutComponentBase
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="image">
+                    <img src="images/me.jpg" class="img-fluid" style="width: 100%" alt="Morten" />
+                    <div class="alt-text">
+                        <p class="fw-bold fs-4">Morten Lomholt Møller</p>
+                        <p class="fw-semibold">Full Stack Developer</p>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <SidebarContactComponent />
+                    <br />
+                    <SkillsComponent />
+                    <SidebarInfoComponent InfoTitle="Personal Assets" Text="Team player, Focused on the product, Resourceful" />
+                    <br />
+                    <SidebarInfoComponent InfoTitle="Interests" Text="Smart home, Fixing up cars, Entrepreneurship" />
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        @Body
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

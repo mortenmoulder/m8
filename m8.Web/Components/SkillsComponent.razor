@@ -1,0 +1,9 @@
+﻿@using m8.Web.Models;
+<h2>Skills</h2>
+
+@foreach(var skill in Skills) {
+    <p class="fw-bold">@skill.Name</p>
+    <div class="progress" style="height: 4px">
+        <div class="progress-bar" role="progressbar" style="width:@skill.Percentage%" aria-valuenow="@skill.Percentage" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+}

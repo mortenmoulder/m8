@@ -1,0 +1,23 @@
+﻿@using m8.Web.Models;
+<h2>Work Experience</h2>
+
+@foreach (var work in WorkExperiences)
+{
+    <div class="row mb-4">
+        <div class="col-4">
+            <span class="fw-bold text-secondary">@work.From.ToString("MMMM yyyy") - @(work.To != null ? @work.To.Value.ToString(" MMMM yyyy") : "current")</span>
+        </div>
+        <div class="col-8">
+            <p class="fw-bold">@work.JobTitle</p>
+            <p><span class="fw-bold text-primary">@work.Company</span> (@work.Location)</p>
+            <p>@work.Description</p>
+            <p class="fw-bold mb-0">Primary technologies:</p>
+            <ul>
+                @foreach(var tech in work.Technologies)
+                {
+                    <li>@tech</li>
+                }
+            </ul>
+        </div>
+    </div>
+}
