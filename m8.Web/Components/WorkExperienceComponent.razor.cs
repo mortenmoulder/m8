@@ -5,6 +5,8 @@ namespace m8.Web.Components;
 
 public partial class WorkExperienceComponent : ComponentBase
 {
+    [Parameter]
+    public string CssClass { get; set; } = "";
     public List<WorkExperience> WorkExperiences { get; set; }
 
     protected override void OnInitialized()

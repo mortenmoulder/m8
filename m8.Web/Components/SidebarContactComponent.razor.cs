@@ -5,6 +5,8 @@ namespace m8.Web.Components;
 
 public partial class SidebarContactComponent : ComponentBase
 {
+    [Parameter]
+    public string CssClass { get; set; } = "";
     public List<SocialProfile> SocialProfiles { get; set; }
 
     protected override void OnInitialized()

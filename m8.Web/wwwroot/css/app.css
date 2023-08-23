@@ -1,32 +1,7 @@
-.sidebar {
-    background: var(--bs-primary);
-    padding: 16px;
+﻿.image .alt-text {
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.sidebar p {
-    font-weight: bold;
-}
-
-.sidebar hr {
-    width: 80%;
-    margin: 2rem auto;
-    border-top: 2px dashed var(--bs-black);
-    opacity: 100;
-}
-
-.image {
-    position: relative;
-}
-
-.image .alt-text {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 8px;
-    background: rgba(0, 0, 0, 0.4);
-    color: var(--bs-white);
-}
-
-.image .alt-text p {
-    margin: 0;
+.card {
+  border: 0;
 }

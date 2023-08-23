@@ -2,24 +2,20 @@
 @inherits LayoutComponentBase
 
 <main>
-    <div class="container">
+    <div class="container text-light">
         <div class="row">
-            <div class="col-3">
-                <div class="image">
-                    <img src="images/me.jpg" class="img-fluid" style="width: 100%" alt="Morten" />
-                    <div class="alt-text">
-                        <p class="fw-bold fs-4">Morten Lomholt Møller</p>
-                        <p class="fw-semibold">Full Stack Developer</p>
+            <div class="col-3 sidebar">
+                <div class="m-2 position-relative card">
+                    <img src="images/me.jpg" class="img-fluid rounded" style="width: 100%" alt="Morten" />
+                    <div class="position-absolute fixed-bottom p-2 bg-black bg-opacity-75">
+                        <p class="fw-bold fs-4 m-0">Morten Lomholt Møller</p>
+                        <p class="fw-semibold m-0">Full Stack Developer</p>
                     </div>
                 </div>
-                <div class="sidebar">
-                    <SidebarContactComponent />
-                    <br />
-                    <SkillsComponent />
-                    <SidebarInfoComponent InfoTitle="Personal Assets" Text="Team player, Focused on the product, Resourceful" />
-                    <br />
-                    <SidebarInfoComponent InfoTitle="Interests" Text="Smart home, Fixing up cars, Entrepreneurship" />
-                </div>
+                <SidebarContactComponent CssClass="m-2 p-3 card" />
+                <SkillsComponent CssClass="m-2 p-3 card" />
+                <SidebarInfoComponent InfoTitle="Personal Assets" Text="Team player, Focused on the product, Resourceful" CssClass="m-2 p-3 card" />
+                <SidebarInfoComponent InfoTitle="Interests" Text="Smart home, Fixing up cars, Entrepreneurship" CssClass="m-2 p-3 card" />
             </div>
             <div class="col-9">
                 <div class="row justify-content-center">

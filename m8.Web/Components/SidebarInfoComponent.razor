@@ -1,6 +1,9 @@
 ﻿@using m8.Web.Models;
-<h2>@InfoTitle</h2>
+<div class="@CssClass">
+    <h2>@InfoTitle</h2>
 
-@foreach(var info in Infos) {
-    <p>@info</p>
-}
+    @foreach (var info in Infos)
+    {
+        <p class="fw-bold">@info</p>
+    }
+</div>

@@ -5,6 +5,8 @@ namespace m8.Web.Components;
 
 public partial class SkillsComponent : ComponentBase
 {
+    [Parameter]
+    public string CssClass { get; set; } = "";
     public List<Skill> Skills { get; set; }
 
     protected override void OnInitialized()

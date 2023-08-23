@@ -4,6 +4,8 @@ namespace m8.Web.Components;
 
 public partial class SidebarInfoComponent : ComponentBase
 {
+    [Parameter] 
+    public string CssClass { get; set; } = "";
     [Parameter]
     public string InfoTitle { get; set; }
     [Parameter]
